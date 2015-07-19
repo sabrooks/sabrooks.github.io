@@ -9,7 +9,12 @@
 
     <div class="page-content">
       <div class="container">
-        {{ content }}
+        <div class="col-sm-8"> <!-- Places content in col, make room for sidebar -->
+          {{ content }}
+        </div>
+        <div class="col-sm-4">
+          {% include sidebar.html %}
+        </div>
       </div>
     </div>
 

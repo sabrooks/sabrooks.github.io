@@ -24,3 +24,7 @@ You can also embed plots, for example:
 ## Error in eval(expr, envir, enclos): could not find function "%>%"
 ```
 
+We also look at time series.
+Steps include 
+* Format the data.
+* Select a model form.

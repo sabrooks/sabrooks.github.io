@@ -22,3 +22,7 @@ You can also embed plots, for example:
 cars%>%knitr::kable(caption = "The Cars table")
 ```
 
+We also look at time series.
+Steps include 
+* Format the data.
+* Select a model form.
