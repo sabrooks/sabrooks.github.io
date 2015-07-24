@@ -19,7 +19,7 @@ ggplot2::ggplot(mtcars, aes(x = wt, y = mpg))+
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE}
 cars%>%knitr::kable(caption = "The Cars table")
 ```
 
