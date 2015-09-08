@@ -8,3 +8,4 @@ This site is built using rmarkdown, knitr, and jeykll.is an R Markdown document.
 
 ![plot of chunk mtcarplot](/figure/./build/mtcarplot-1.png) 
 
+build with just knitr?
