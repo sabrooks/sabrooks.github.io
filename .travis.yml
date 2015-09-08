@@ -9,6 +9,7 @@ deploy:
   access_key_id: AKIAIVBB5T3UUES5CC4A
   secret_access_key:
     secure: Yudad/W7LBWwjJjU2BNdfciReWoAF4bglXDBnnbILm+R/Fz38Cly9YxODzlRzu0zjW80XQgLthzG5Ms29fanEjzXjvkmVDPWQFztDVLFWgevA5zWJvc251Xk7qu8W6Ks/wO6az+bdiFlO43rgrHfogZZv1j6ku1WTdUDerIywVdJrzpMQaupAD+aDo78+hzHAMM65ZT74ApAS7dWYspErprpG+ma+UVTwXDUGmtk2EB9pSscFMLtb3sVYCqmmoluLUz5hNgG91z06g5Qntcy8QMb3nblA7Hgy89qAQFLpYLWSzo3p8sy66g3/G4m75SRt/gVjC+UTkYLWyWo+huWW/wSTtYZbN8cxDUnoG6cu24rvOWNius20rhOmmGmBaVsbJAXsEyRdD1u8cdCzEdHUbnG7UClWFFO+5T7JUybYRLaAHMerZFtopur2WD5S+rV9loUvIgORbkbcE9Mrn/T76NAPSYzPGzww9pXdMB7SPPK3XYm8HsZH/k8WS0VNnrXyqH+aDkjMHfYUxjhRTJZrgsdGb/5aStUxyxT4oZbZdbuA+cGnRMebIsOq/lVumIoIj5ky9TTJraaE20i2RfKgeM9PpYMa4lFEjQEQ6dzs2Zcq8pj8TQZ3VnJFP+NK+LjoCfJphxLLjzX5fszN09Afs7Jozgjgb8zVUlTUOF2z/Y=
+  bucket: sabrooks.com
   region: us-west-2
   endpoint: sabrooks.com.s3-website-us-west-2.amazonaws.com
   local-dir: _site
