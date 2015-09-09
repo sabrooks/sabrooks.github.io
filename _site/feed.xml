@@ -6,9 +6,63 @@
 </description>
     <link>sabrooks.com/</link>
     <atom:link href="sabrooks.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Sep 2015 21:41:45 -0700</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 21:41:45 -0700</lastBuildDate>
+    <pubDate>Tue, 08 Sep 2015 21:40:05 -0700</pubDate>
+    <lastBuildDate>Tue, 08 Sep 2015 21:40:05 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Tester</title>
+        <description>&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&quot;http://rmarkdown.rstudio.com&quot;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you click the &lt;strong&gt;Knit&lt;/strong&gt; button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kp&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/source/2015-09-10-test/unnamed-chunk-2-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-2&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Sep 2015 00:00:00 -0700</pubDate>
+        <link>sabrooks.com/2015/09/08/test.html</link>
+        <guid isPermaLink="true">sabrooks.com/2015/09/08/test.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>MT CARs</title>
+        <description>&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&quot;http://rmarkdown.rstudio.com&quot;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you click the &lt;strong&gt;Knit&lt;/strong&gt; button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kp&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/posts/2015-09-10-mtcars/unnamed-chunk-2-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-2&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Sep 2015 00:00:00 -0700</pubDate>
+        <link>sabrooks.com/2015/09/08/mtcars.html</link>
+        <guid isPermaLink="true">sabrooks.com/2015/09/08/mtcars.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
