@@ -2,6 +2,9 @@
 install:
     - travis_retry gem install jekyll mime-types
 
+before_install:
+  - rm -r _site
+
 script: jekyll build
 
 after_success:
