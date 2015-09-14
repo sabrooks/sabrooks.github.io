@@ -2,6 +2,12 @@
 install:
     - travis_retry gem install jekyll mime-types
 
+<<<<<<< HEAD
+=======
+clean:
+	- rm -r ../_site
+
+>>>>>>> 64dd1cef6f1941d621733b52370f8d356df3e784
 script: jekyll build
 
 deploy:
