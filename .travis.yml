@@ -8,7 +8,7 @@ before_install:
 script: jekyll build
 
 after_success:
-  - cp -r figures/ _site/figures
+  - cp -r figure/ _site/figure
 
 deploy:
   provider: s3
