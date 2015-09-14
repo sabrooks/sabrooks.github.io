@@ -12,7 +12,7 @@ source("../common.R")
 ```
 
 # Introduction
-Using htmltools.
+Using htmltools.1.
 
 ## Sub Category
 ```{r, echo=FALSE, results='asis'}
@@ -37,7 +37,7 @@ mtcars%>%knitr::kable()
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
+```{r plot, echo=FALSE}
 plot(cars)
 ```
 
