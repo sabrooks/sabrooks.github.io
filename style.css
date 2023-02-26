@@ -24,3 +24,9 @@ a {
 a:hover {
     color: #000
 }
+
+main {
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+}
