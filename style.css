@@ -10,6 +10,7 @@ header {
 }
 
 
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -29,4 +30,73 @@ main {
     display: grid;
     padding: 2rem;
     gap: 2rem;
+    justify-items: center;
+}
+
+article {
+    max-width: 980px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#projects {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+#projects h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #777;
+    margin: 10px;
+}
+
+.project-card a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    background-color: #0062cc;
 }
