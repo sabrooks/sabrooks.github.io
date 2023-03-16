@@ -21,61 +21,41 @@
         </header>
         <main>
             <article>
-                <h1>Anomaly Detection</h1>
+                <h1>Anomaly Detection in Refrigeration Systems</h1>
                 <br>
-                <h4>Keywords: Timeseries, Clustering, Unsupervised</h4>
-                <br>
-                <p>
-                    <strong>Summary</strong>: Compressor cycles create a pattern in temperature recordings by causing
-                    the temperature to cycle between a high and low temperature range. The temperature cycling repeats
-                    itself each time the compressor cycles on and off. Deviating from this temeprature cycle is an
-                    indication of potential issues with the refrigeration systems.
-                </p>
+                <h4>Keywords: Timeseries, Clustering</h4>
                 <br>
                 <p>
-                    Household energy consumption habits change by day of the week and season.
-                    Energy habits include not just how much energy is used but also the pattern of usage of day.
-                    Daily patterns are classified by clusters formed from the daily usage profile. The steps are
-                    explained below.
-                </p>
-                <h3> Low-Pass Filter </h3>
-                <p>Low-pass Filter with cuttof 15 minutes: Smooths trends less than 15 minutes long.
-                    Purpose in this application is to reduces the indepence of each minute (each minute will be a
-                    feature in the cluster). For our purposes increase usage at 6:03.
-
-                    An alternative would be to downsample to 5 minute intervals.
+                    <strong>Summary</strong>In refrigeration systems, compressor cycles create a recurring pattern in
+                    temperature recordings, causing the temperature to oscillate between high and low ranges. Any
+                    deviation from this temperature cycle may indicate potential issues with the system. This article
+                    presents an anomaly detection algorithm designed to monitor changes in the temperature cycles and
+                    generate alerts when abnormalities occur.
                 </p>
                 <br>
-                <h3>Scaling</h3>
-                <p>To minimize the effect of temperature on load,
-                    we scale the data to have zero mean and a spread of one. We do this for each day separately to avoid
-                    the
-                    bias of temperature. Our goal is to identify patterns in energy consumption relative to each other,
-                    and not just the
-                    total consumption. If we did not scale each day, the result would be very close to a one dimensional
-                    clustering on total daily consumption.
-                </p>
-                <img src="img/cwt.png" alt="Cluster Alogrithm Pipeline">
-                <p>Minute-level energy data from a household electric meter can be used to classify daily
-                    energy patterns in consumption. The way to classify daily energy patterns is to use
-                    unsupervised learning methods such as clustering. Clustering algorithms can group similar energy
-                    consumption patterns together into clusters, which can then be labeled and analyzed. For example,
-                    k-means clustering can be used to group similar patterns of energy consumption based on their
-                    similarity in terms of energy usage throughout the day.
-                </p>
-                <br>
-                <h2>Clustering</h2>
-                <object data="img/cluster.svg" width="300" height="300"> </object>
-                <p>Eight clusters are selected as a trade off between minimizing the cummalative error (distance) </p>
                 <p>
-                    One way to classify daily energy patterns is to use unsupervised learning methods such as
-                    clustering. Clustering algorithms can group similar energy consumption patterns together into
-                    clusters, which can then be
-                    labeled and analyzed.
-                    For example, k-means clustering can be used to group similar patterns of energy consumption based on
-                    their similarity in
-                    terms of energy usage throughout the day.
+                    <img src="img/Anomaly Detector.drawio.png" alt="Cluster Alogrithm Pipeline">
                 </p>
+                <h3>Wavelet Decomposition </h3>
+                <p>avelet decomposition is used to transform the temperature waveform into the frequency domain. This
+                    technique incorporates historical information into each sample. A typical period is selected for
+                    training the Principal Component Analysis (PCA) model.
+                </p>
+                <br>
+                <h3>PCA Compression and Reconstruction</h3>
+                <p> PCA compresses and reconstructs the frequency waveform obtained from the wavelet decomposition.
+                    Since the PCA model is trained on a normal operation period, it can efficiently compress and
+                    reconstruct the waveform with minimal loss. The more abnormal an observation is, the greater the
+                    loss incurred during the compression and reconstruction process.
+                </p>
+                <br>
+                <h3>Mean Squared Error</h3>
+                <p> The Mean Squared Error (MSE) quantifies the loss resulting from the PCA compression and
+                    reconstruction. Higher MSE values indicate a greater deviation from normal operation.</p>
+                <h3>Threshold Setting with Logistic Regression</h3>
+                <p>To determine the alarm threshold, a logistic regression model is trained using previous examples of
+                    abnormal refrigeration cycles. This threshold helps to differentiate between normal and abnormal
+                    operation and trigger alerts when necessary..</p>
 
             </article>
         </main>
