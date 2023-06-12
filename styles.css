@@ -1,0 +1,55 @@
+:root {
+    --hero-background-color: #051923;
+    --title-color: #00A6FB;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    color: var(--title-color);
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#about {
+    grid-column: span 6;
+}
+
+#projects {
+    grid-column: span 6;
+}
+
+.hero {
+    background-color: var(--hero-background-color);
+}
+
+.hero h2 {
+    color: white;
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+p {
+    color: #545B64;
+}
