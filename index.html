@@ -11,48 +11,53 @@
     <body>
         <div class="hero">
             <header>
-                <nav>
+                <div class="container">
                     <h1>SABROOKS.COM</h1>
-                </nav>
+                </div>
             </header>
             <section id="about">
                 <h2>I am an engineer specializing in Machine-to-Machine (M2M) data and timeseries data analysis.</h2>
             </section>
         </div>
         <main>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Anomaly Detection</h3>
-                    <div>
-                        <p>This project is a anomaly detection pipeline for time series data of
-                            refrigerator temperatures using machine learning methods in the Scikit-Learn library. It
-                            first
-                            defines four classes Wavelet, CompressionDistortion, Passthrough, and MSE that are
-                            transformers
-                            to preprocess the data.
-                        </p>
-                        <p>
-                            'Wavelet' class computes wavelet coefficients of the input time series data.
-                            CompressionDistortion
-                            applies Principal Component Analysis (PCA) to the wavelet coefficients, compresses them into
-                            fewer dimensions and then reconstructs the wavelet coefficients from the compressed data.
-                            Passthrough is a simple transformer that returns the input as it is. MSE computes the mean
-                            squared error between the original and the reconstructed wavelet coefficients, giving a
-                            measure
-                            of the reconstruction error.
-                        </p>
-                        <p>The script then builds an anomaly detection pipeline that applies these transformations
-                            sequentially to the input data. The FeatureUnion named pca_original applies the
-                            CompressionDistortion and Passthrough transformers in parallel and concatenates their
-                            outputs.
-                            The Pipeline named anomaly_pipeline applies these transformations and finally, it uses a
-                            SGDClassifier to classify data points as normal or anomalous based on the mean squared error
-                            exceeding a certain threshold.
-                        </p>
+            <div class="container">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>Anomaly Detection</h3>
+                        <a href="https://github.com/sabrooks/RefrigerationAnomalyDetection">Github Link</a>
+                        <div>
+                            <p>This project is a anomaly detection pipeline for time series data of
+                                refrigerator temperatures using machine learning methods in the Scikit-Learn library. It
+                                firstdefines four classes `Wavelet`, `CompressionDistortion`, `Passthrough`, and `MSE`
+                                that are
+                                transformers
+                                to preprocess the data.
+                            </p>
+                            <p>
+                            <ul>
+                                <li>'Wavelet' class computes wavelet coefficients of the input time series data.
+                                </li>
+                                <li>`CompressionDistortion` applies Principal Component Analysis (PCA) to the wavelet
+                                    coefficients, compresses them into fewer dimensions and then reconstructs the
+                                    wavelet coefficients from the compressed data.
+                                </li>
+                                <li>`Passthrough` is a simple transformer that returns the input as it is.</li>
+                                <li>`MSE computes` the mean squared error between the original and the reconstructed
+                                    wavelet coefficients, giving a measure of the reconstruction error.
+                                </li>
+                            </ul>
+                            </p>
+                            <p>The script then builds an anomaly detection pipeline that applies these transformations
+                                sequentially to the input data. The Pipeline applies these transformations and finally,
+                                it uses a
+                                SGDClassifier to classify data points as normal or anomalous based on the mean squared
+                                error exceeding a certain threshold.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
     </body>
 

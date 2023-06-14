@@ -24,10 +24,16 @@ nav a {
     text-decoration: none;
 }
 
+.project a {
+    color: var(--title-color)
+}
+
 main {
     display: grid;
     grid-gap: 20px;
     padding: 20px;
+    display: grid;
+    justify-content: center;
 }
 
 #about {
@@ -35,11 +41,14 @@ main {
 }
 
 #projects {
-    grid-column: span 6;
+    max-width: 960px;
 }
 
 .hero {
     background-color: var(--hero-background-color);
+    display: grid;
+    justify-content: center;
+    padding: 20px;
 }
 
 .hero h2 {
@@ -52,4 +61,8 @@ h1 {
 
 p {
     color: #545B64;
+}
+
+.container {
+    max-width: 960px;
 }
