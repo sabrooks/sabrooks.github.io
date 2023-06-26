@@ -38,6 +38,7 @@ main {
 
 #about {
     grid-column: span 6;
+    display: flex;
 }
 
 #projects {
